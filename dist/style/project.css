@@ -1,0 +1,147 @@
+.desktop {
+  display: flex;
+  flex-direction: row;
+  padding: 0 20px 0 20px;
+}
+#rayCanvas {
+  position: absolute;
+  z-index: 0;
+  left: 26%;
+}
+#rasterCanvas {
+  position: absolute;
+  z-index: -1;
+  left: 26%;
+}
+.taskbar {
+  margin-left: 20px;
+  width: 22%;
+  height: 90%;
+  border-style: solid;
+  border-radius: 30px;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  background-color: rgba(137, 43, 226, 0.194);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 10px 20px 10px 10px;
+}
+h2 {
+  margin-left: 10px;
+  text-align: center;
+}
+.instructionManual {
+  margin-right: 20px;
+  padding: 10px 20px 10px 10px;
+  width: 30%;
+  height: 90%;
+  border-style: solid;
+  border-radius: 30px;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: rgba(137, 43, 226, 0.194);
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+}
+.taskbarItem {
+  margin: 10px;
+}
+.instructionManual {
+  font-size: 14px;
+}
+.phongTable {
+  background-color: hsla(0, 0%, 100%, 0.6);
+  border-radius: 10px;
+  padding: 30px;
+  width: 105%;
+}
+th {
+  padding: 5px;
+}
+td {
+  padding: 10px 5px 5px 5px;
+}
+
+.addObjForm {
+  position: absolute;
+  top: 100px;
+  left: 350px;
+  border: solid;
+  background-color: rgba(9, 118, 164, 0.8);
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+.addButton {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.addObjs {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+.addObjsButtons {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
+.inputSection {
+  display: flex;
+  flex-direction: row;
+}
+
+.closeButton {
+  border: solid;
+  border-radius: 5px;
+  margin-left: 800px;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rendererSelection {
+  display: flex;
+  flex-direction: column;
+}
+
+.col-sm-4 {
+  width: 200px !important;
+}
+.changeCamHeader {
+  font-size: 14px;
+  font-weight: bolder;
+}
+.item {
+  margin-left: 20px;
+}
+.menuButton {
+  margin: 0 5px 0 5px;
+}
+::-webkit-scrollbar {
+  width: 13px;
+  height: 90%;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}

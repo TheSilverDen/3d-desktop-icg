@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="title" content="ICG Project" />
+    <meta name="description" content="Project Desktop" independent="" of="" render="" performance"."="">
+    <meta name="ordinal" content="0101" />
+    <meta name="difficulty" content="12" />
+    <meta name="tags" content="" />
+    <meta name="icon" content="./textures/hci-logo.png" />
+    <meta charset="UTF-8" />
+    <link href="./style/project.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <link rel="icon" type="image/png" href="textures/hci-logo.png" />
+    <script type="text/javascript" src="abgabe-project.bundle.js"></script>
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/index.html">
+          <img src="textures/hci-logo.png" width="30" height="30" class="d-inline-block align-top" alt="" />
+          ICG
+        </a>
+        <div class="navbar-brand">Project - Group 3</div>
+      </div>
+    </nav>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="desktop">
+          <div class="projectCanvas">
+            <canvas
+              id="rayCanvas"
+              class="figure-img mx-auto d-block rounded"
+              width="100"
+              height="100"
+              style="visibility: hidden; scale: 6"
+            >
+            </canvas>
+            <canvas
+              id="rasterCanvas"
+              class="figure-img mx-auto d-block rounded"
+              width="600"
+              height="600"
+              style="visibility: visible"
+            >
+            </canvas>
+          </div>
+
+          <div class="taskbar">
+            <h2>HTML Menu</h2>
+            <input type="button" id="startAnimationBtn" class="btn btn-dark taskbarItem" value="Start" />
+            <div class="rendererSelection taskbarItem">
+              <label>Choose a renderer: </label>
+              <select id="rendererMenu">
+                <option>Raytracing</option>
+                <option selected>Rasterisation</option>
+              </select>
+            </div>
+            <hr />
+            <h6>Light Sources</h6>
+            <div class="addObjs taskbarItem">
+              <div class="addObjsButtons">
+                <button id="addLightsButton" class="btn btn-dark menuButton">add lights source</button>
+                <button id="resetLightsButton" class="btn btn-dark menuButton">reset lights</button>
+              </div>
+            </div>
+            <hr />
+            <div class="addObjs taskbarItem">
+              <h6>Object Nodes</h6>
+              <div class="addObjsButtons">
+                <button id="addObjectButton" class="btn btn-dark menuButton">add object</button>
+                <button id="deleteObjectButton" class="btn btn-dark menuButton">delete selected object</button>
+              </div>
+            </div>
+            <hr />
+            <div class="taskbarItem">
+              <h6>Change Phong Parameters for individual objects</h6>
+              <table class="phongTable">
+                <tbody>
+                  <tr>
+                    <th scope="row">Ambient</th>
+                    <td>
+                      <input type="color" id="ambient" value="#a60000" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Diffuse</th>
+                    <td>
+                      <input type="color" id="diffuse" value="#500000" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Specular</th>
+                    <td>
+                      <input type="color" id="specular" value="#c8c8c8" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Specular Exponent</th>
+                    <td>
+                      <input type="range" id="specular-exponent" min="-0.5" max="25" value="15" step="0.05" />
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr />
+            <div class="col-sm-4 taskbarItem">
+              <h6>Camera position</h6>
+
+              <div class="form-group text-left col-sm-12">
+                <label class="form-check-label" for="posx">Move camera on x-axis</label>
+                <input class="form-control-range" type="range" min="-5" max="5" step="0.01" id="posx" />
+              </div>
+              <div class="form-group text-left col-sm-12">
+                <label class="form-check-label" for="posy">Move camera on y-axis</label>
+                <input class="form-control-range" type="range" min="-5" max="5" step="0.01" id="posy" />
+              </div>
+              <div class="form-group text-left col-sm-12">
+                <label class="form-check-label" for="yaw">Change cameras yaw</label>
+                <input class="form-control-range" type="range" min="-0.5" max="0.5" step="0.01" id="yaw" />
+              </div>
+              <div class="form-group text-left col-sm-12">
+                <label class="form-check-label" for="pitch">Change cameras pitch</label>
+                <input class="form-control-range" type="range" min="-0.5" max="0.5" step="0.01" id="pitch" />
+              </div>
+              <button id="resetCamButton" class="btn btn-dark menuButton">reset camera</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="instructionManual">
+      <h2>Instruction Manual</h2>
+      <ul>
+        <h6>Key Assignments</h6>
+        <li>"c" Change Renderer</li>
+        <li>"x" Start/Stop Rotation animation</li>
+        <li>"w" Window 1 (Sphere)</li>
+        <li>"q" Window 2 (Pyramid)</li>
+        <li>"e" Window 3 (Cube)</li>
+        <li>"g" Game Window (TicTacToe)</li>
+        <li>"v" Video Window</li>
+        <li>"s" Squirrel</li>
+        <li>"z" resize game window (maximize/normal size)</li>
+        <li>"r" replay game</li>
+        <li>"1" tick TicTacToe Field 1 ("1" - "9" for each field tick)</li>
+        Additionally, you can use your mouse to click on the objects and interact with them
+        <hr />
+        <h6>Change between renderers</h6>
+        You can switch between the two renderers - Raytracer and Rasterizer - in the Renderer dropdown menu.
+        <br /><br />
+        <h6>Add light sources and objects</h6>
+        You can add light sources by clicking on the "add lights" button. Set the position and color of the light and
+        add it. In total, 8 lights are possible.
+        <br />
+        Furthermore, you can add new objects to the scene. If you want to delete these objects later, just select it and
+        press "delete object".
+        <br /><br />
+        <h6>Change phong parameters for individual objects</h6>
+        To set lighting parameters for objects, just click the object and change the parameters in the menu on the left.
+        To deselect, just click it again.<br />
+        Possible for: Windows, Window content objects, background, taskbar.
+        <br /><br />
+        <h6>Move camera</h6>
+        If you want a different view, you can move the camera view around by using the sliders.
+        <br /><br />
+        <h6>Moving objects</h6>
+        Application windows can be moved with the help of a driver animation. To do this, you need to select the object
+        again and then you can move it using the arrow keys on the keyboard.
+        <br /><br />
+        <h6>TicTacToe</h6>
+        Play a nice round of TicTacToe with a friend. Just open the game in the taskbar and tick the fields.
+      </ul>
+    </div>
+
+    <div id="addLightsPopup" class="addObjForm" style="display: none">
+      <div>
+        <button id="addLightsClose" class="closeButton">x</button>
+      </div>
+      <div class="addLightsInputPosition inputSection">
+        <p>Position X:</p>
+        <input type="number" id="posXLight" class="lightInputField" min="-5" max="5" step="0.2" />
+        <p>Position Y:</p>
+        <input type="number" id="posYLight" class="lightInputField" min="-5" max="5" step="0.2" />
+        <p>Position Z:</p>
+        <input type="number" id="posZLight" class="lightInputField" min="-5" max="5" step="0.2" />
+      </div>
+      <div class="addLightsInputColor inputSection">
+        <p>Color Red:</p>
+        <input type="number" id="redInputLight" class="lightInputField" min="0" max="1" step="0.1" />
+        <p>Color Green:</p>
+        <input type="number" id="greenInputLight" class="lightInputField" min="0" max="1" step="0.1" />
+        <p>Color Blue:</p>
+        <input type="number" id="blueInputLight" class="lightInputField" min="0" max="1" step="0.1" />
+      </div>
+      <button id="addNewLightButton" class="addButton">ADD</button>
+    </div>
+    <div id="maxLightsPopup" class="addObjForm" style="display: none">
+      <p>You already use the maximum of 8 light sources</p>
+      <p>Unfortunately you cannot add more.</p>
+      <button id="maxLightsOkButton">OK.</button>
+    </div>
+
+    <div id="addObjectsPopup" class="addObjForm" style="display: none">
+      <div>
+        <button id="addObjectsClose" class="closeButton">x</button>
+      </div>
+      <select id="objectType">
+        <option>Sphere</option>
+        <option>Box</option>
+        <option>Pyramid</option>
+      </select>
+      <div class="addObjectsInputPosition inputSection">
+        <p>Position X:</p>
+        <input type="number" id="posXObj" class="objInputField" min="-1" max="1" step="0.05" />
+        <p>Position Y:</p>
+        <input type="number" id="posYObj" class="objInputField" min="-1" max="1" step="0.05" />
+        <p>Position Z:</p>
+        <input type="number" id="posZObj" class="objInputField" min="-1" max="1" step="0.05" />
+      </div>
+      <div class="addObjectsInputColor inputSection">
+        <p>Color Red:</p>
+        <input type="number" id="redInputObj" class="objInputField" min="0" max="1" step="0.1" />
+        <p>Color Green:</p>
+        <input type="number" id="greenInputObj" class="objInputField" min="0" max="1" step="0.1" />
+        <p>Color Blue:</p>
+        <input type="number" id="blueInputObj" class="objInputField" min="0" max="1" step="0.1" />
+      </div>
+      <div>
+        Rotation:
+        <input type="checkbox" id="rotationNewObj" name="rotationNewObj" value="Rotation" />
+      </div>
+      <button id="addNewObjectButton">ADD</button>
+    </div>
+  </body>
+</html>
