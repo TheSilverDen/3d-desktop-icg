@@ -223,12 +223,6 @@ The project has been tested with the following configurations:
   - Chrome Version <117.0.5938.62> 
   - node js Version <20.0.0>
 
-## The authors
-
-- Deniz Celikhan (2030598)
-- Joanna Grause (2750070)
-- Antonia Heyder (2736868)
-
 ## Used Sources
 
 - Lecture Materials (Interaktive Computergraphik SS23)
