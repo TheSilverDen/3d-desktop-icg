@@ -1,6 +1,4 @@
-# ICG Projekt - Group 3
-
-This repository contains the project of the course "Interactive Computer Graphics" by **Deniz Celikhan, Joanna Grause and Antonia Heyder**. 
+# ICG Projekt
 
 # Project Structure
 <!-- Ihr könnt die Projektstruktur beliebig beschreiben. Hier einfach mit dem Unix Programm `tree`  -->
