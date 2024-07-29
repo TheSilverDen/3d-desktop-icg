@@ -177,33 +177,34 @@ By clicking on the corresponding field or by keyboard input of the corresponding
 <!-- replace  "- [ ]" with "- [X]" when you tackled the topic -->
 <!-- the bullet points are from last years requirements; you need to change the entries to reflect the current requirements -->
 
-| Nummer | Punkte | Beschreibung                                                     | bearbeitet               | Verantwortliche/r                    | Bewertung |
-| ------ | ------ | ---------------------------------------------------------------- | ------------------------ | ------------------------------------ | --------- |
-| M1     | 5      | Szenengraph                                                      | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder              |           |
-| M2     | 10     | Rasteriser & Ray Tracer                                          | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder              |           |
-| M3     | 3      | min. drei eingebundene Objekte                                   | <ul><li>- [X] </li></ul> |Deniz Celikhan, Joanna Grause, Antonia Heyder                           |           |
-| M4     | 8      | min. drei verschiedene Animationsknoten                          | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                           |           |
-| M5     | 4      | texturierte und phong-beleuchtete Objekte                        | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| M6     | 5      | mathematische Bibliothek                                         | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder            |           |
-| M7     | 4      | Phong WebGL Shader (Rasterisier)                                 | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| M8     | 2      | 3D-Anwendungsfenster                                             | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder             |           |
-| M9     | 4      | Taskleiste                                                       | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| M10    | 5      | Mausklick mit Manipulation                                       | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                         |           |
-|        |        |                                                                  |                          |                                      |           |
-| O1     | 7      | weitere Textur zur Beeinflussung der Beleuchtung / Transparenz (Alpha Mapping) | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder             |           |
-| O2     | 3      | Videos und Text als Textur                                       | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| O3     | 8      | Laden von 3D Modellen                                            | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                                     |           |
-| O4     | 4      | mehrere Lichtquellen                                             | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                         |           |
-| O5     | 6      | Lupeneffekt                                                      | <ul><li>- [ ] </li></ul> |  |           |
-| O6     | 4      | Animation bei Klick                                              | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder |           |
-| O7     | 8      | Kamera-Knoten                                                    | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                                     |           |
-| O8     | 5      | Beschleunigung des Raytracing                                    | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| O9     | 8      | Laden & Speichern                                                | <ul><li>- [ ] </li></ul> |                                      |           |
-| O10    | 7      | Raytracing aller Dreiecksnetze                                   | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                          |           |
-| O11    | 10     | Dynamische Texturen                                              | <ul><li>- [ ] </li></ul> |             |           |
-| O12    | 10      | Zweite interaktive Szene                                         | <ul><li>- [ ] </li></ul> |                                      |           |
-| O13    | 5      | Anwendung in den 3D Anwendungsfenstern (TicTacToe Spiel)         | <ul><li>- [X] </li></ul> |Deniz Celikhan, Joanna Grause, Antonia Heyder                                      |           |
-| O14    | nach Absprache      | Eigene Implementierungsvorschläge: MatrixPrecomputationVisitor, Hinzufügen und Löschen von Objekten in Laufzeit                              | <ul><li>- [X] </li></ul> | Deniz Celikhan, Joanna Grause, Antonia Heyder                                      |                                  |           |
+| Nummer | Punkte | Beschreibung                                                     | bearbeitet               | Bewertung |
+| ------ | ------ | ---------------------------------------------------------------- | ------------------------ | --------- |
+| M1     | 5      | Szenengraph                                                      | <ul><li>- [X] </li></ul> |           |
+| M2     | 10     | Rasteriser & Ray Tracer                                          | <ul><li>- [X] </li></ul> |           |
+| M3     | 3      | min. drei eingebundene Objekte                                   | <ul><li>- [X] </li></ul> |           |
+| M4     | 8      | min. drei verschiedene Animationsknoten                          | <ul><li>- [X] </li></ul> |           |
+| M5     | 4      | texturierte und phong-beleuchtete Objekte                        | <ul><li>- [X] </li></ul> |           |
+| M6     | 5      | mathematische Bibliothek                                         | <ul><li>- [X] </li></ul> |           |
+| M7     | 4      | Phong WebGL Shader (Rasterisier)                                 | <ul><li>- [X] </li></ul> |           |
+| M8     | 2      | 3D-Anwendungsfenster                                             | <ul><li>- [X] </li></ul> |           |
+| M9     | 4      | Taskleiste                                                       | <ul><li>- [X] </li></ul> |           |
+| M10    | 5      | Mausklick mit Manipulation                                       | <ul><li>- [X] </li></ul> |           |
+|        |        |                                                                  |                          |           |
+| O1     | 7      | weitere Textur zur Beeinflussung der Beleuchtung / Transparenz (Alpha Mapping) | <ul><li>- [X] </li></ul> |           |
+| O2     | 3      | Videos und Text als Textur                                       | <ul><li>- [X] </li></ul> |           |
+| O3     | 8      | Laden von 3D Modellen                                            | <ul><li>- [X] </li></ul> |           |
+| O4     | 4      | mehrere Lichtquellen                                             | <ul><li>- [X] </li></ul> |           |
+| O5     | 6      | Lupeneffekt                                                      | <ul><li>- [ ] </li></ul> |           |
+| O6     | 4      | Animation bei Klick                                              | <ul><li>- [X] </li></ul> |           |
+| O7     | 8      | Kamera-Knoten                                                    | <ul><li>- [X] </li></ul> |           |
+| O8     | 5      | Beschleunigung des Raytracing                                    | <ul><li>- [X] </li></ul> |           |
+| O9     | 8      | Laden & Speichern                                                | <ul><li>- [ ] </li></ul> |           |
+| O10    | 7      | Raytracing aller Dreiecksnetze                                   | <ul><li>- [X] </li></ul> |           |
+| O11    | 10     | Dynamische Texturen                                              | <ul><li>- [ ] </li></ul> |           |
+| O12    | 10     | Zweite interaktive Szene                                         | <ul><li>- [ ] </li></ul> |           |
+| O13    | 5      | Anwendung in den 3D Anwendungsfenstern (TicTacToe Spiel)         | <ul><li>- [X] </li></ul> |           |
+| O14    | nach Absprache      | Eigene Implementierungsvorschläge: MatrixPrecomputationVisitor, Hinzufügen und Löschen von Objekten in Laufzeit                              | <ul><li>- [X] </li></ul> |           |
+
 
 
 
